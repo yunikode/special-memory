@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Bitter');
+@import url('https://fonts.googleapis.com/css?family=Bitter|Roboto+Condensed');
 
 body {
   font-family: Bitter, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 // TOP-NAV
@@ -87,6 +91,7 @@ body {
 // SHOWCASE
 .showcase {
   background: url("../img/showcase.jpg") no-repeat;
+  background-size: cover;
   min-height: 450px;
   color: $white;
 
@@ -106,6 +111,7 @@ body {
 
   .showcase-box-bottom {
     padding: 10px 30px;
+    margin-bottom: 30px;
     background: $secondary;
     color: $white;
     border-bottom-right-radius: 10px;
@@ -124,6 +130,69 @@ body {
         text-decoration: none;
       }
     }
+  }
+}
 
+// domain search
+.domain-search {
+  background: $light-gray;
+  padding: 30px 20px 20px 20px;
+  border-bottom: 2px $medium-light-gray solid;
+  margin-bottom: 30px;
+
+  .domain-form {
+    input, .input-group-label {
+      border-color: $medium-light-gray;
+    }
+  }
+}
+
+.p-box-1, .p-box-2, .p-box-3 {
+  text-align: center;
+
+  .fa {
+    font-size: 60px;
+  }
+
+  .features {
+    margin: 20px 0 30px 0;
+
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid $medium-light-gray;
+    }
+  }
+}
+
+.p-box-1 {
+  .fa {
+    color: $primary;
+  }
+  .pricing span {
+    font-size: 35px;
+    font-weight: bold;
+    color: $primary;
+  }
+}
+
+.p-box-2 {
+  .fa {
+    color: $secondary;
+  }
+  .pricing span {
+    font-size: 35px;
+    font-weight: bold;
+    color: $secondary;
+  }
+}
+
+.p-box-3 {
+  .fa {
+    color: $extra;
+  }
+  .pricing span {
+    font-size: 35px;
+    font-weight: bold;
+    color: $extra;
   }
 }
