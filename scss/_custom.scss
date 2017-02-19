@@ -110,12 +110,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .showcase-box-bottom {
-    padding: 10px 30px;
+    padding: 10px 30px  0 30px;
     margin-bottom: 30px;
     background: $secondary;
     color: $white;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+
+    p {
+      vertical-align: top;
+      display: inline-block;
+    }
 
     .pricing span {
       font-size: 35px;
@@ -123,7 +128,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .start-link {
-      padding-top: 20px;
+      padding-top: 25px;
+      margin: 0 auto;
 
       a {
         color: $white;
@@ -195,4 +201,32 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     color: $extra;
   }
+}
+
+.section-a {
+  margin-top: 30px;
+  padding: 50px 0;
+  background-color: $light-gray;
+}
+
+.section-b {
+  background-color: $dark-gray;
+  color: $white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.section-c {
+  background-color: $primary;
+  color: $white;
+  padding: 50px 0;
+  text-align: center;
+
+  .fa {
+    font-size: 90px;
+  }
+}
+
+footer {
+  padding: 40px 0;
 }
